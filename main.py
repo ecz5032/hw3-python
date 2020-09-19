@@ -2,11 +2,11 @@
 
 def digit_sum(n):
 
-  if n != 1:
+  if n == 0:
+    return 0
+  else:
     z = n % 10
     return z + digit_sum(n//10)
-  else:
-    return 0
 
 def run():
   value = int(input("Enter an int: "))
